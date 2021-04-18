@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\CV_website_skeleton"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CV_website"
+	}
+}

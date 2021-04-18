@@ -1,0 +1,108 @@
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul, #navbar ul li {
+  float: none;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Showcase */
+#showcase {
+  height: 100%;
+}
+
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+/* Home Info */
+
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  display: none;
+}
+
+#home-info .info-content {
+  float: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  #home-info {
+    height: 1150px;
+  }
+  #home-info .info-content {
+    float: right;
+    width: 100%;
+    text-align: center;
+  }
+  .portrait {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/*Mobile 321-425px*/
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  #showcase .showcase-content h1 {
+    font-size: 40px;
+  }
+  #home-info {
+    height: 1110px;
+  }
+}
+
+/*Tablet 426-768px*/
+@media screen and (min-width:426px) and (max-width:768px) {
+  #home-info {
+    height: 710px;
+  }
+  .portrait {
+    width: 25%;
+    float: left;
+  }
+  #home-info .info-content {
+    float: right;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+/*Tablet L to prevent too much empty space below p*/
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  #home-info {
+    height: 570px;
+  }
+}
+
+/* Boxes */
+.box {
+  float: none;
+  width: 100%;
+}
+
+/* About */
+#about-info .info-right,
+#about-info .info-left {
+  float: none;
+  width: 100%;
+}
+
+.l-heading {
+  text-align: center;
+}
+
+#about-info .info-right {
+  margin-top: 30px;
+}
+
