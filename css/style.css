@@ -35,6 +35,12 @@ p {
   font-family: Montserrat;
 }
 
+.txt {
+  margin: 10px 0px 10px;
+  font-family: Montserrat;
+  color: #fff;
+}
+
 /* Utility Classes */
 .container {
   margin: auto;
@@ -65,7 +71,7 @@ p {
 }
 
 .btn:hover {
-  background: plum;
+  background: rgba(0,128,128,0.95);;
   color: #f4f4f4;
 }
 
@@ -153,7 +159,6 @@ p {
 
 #navbar ul li a:hover {
   font-size: 17px;
-  color: darkorange;
   font-weight: bolder;
 }
 
@@ -173,7 +178,7 @@ p {
 #showcase .showcase-content h1 {
   font-size: 70px;
   line-height: 1.2em;
-  font-family: -webkit-pictograph;
+  font-family: 'Roboto';
   font-weight: 500;
 }
 
@@ -191,9 +196,9 @@ p {
 .portrait {
   max-width: 90%;
   height: auto;
-  border-radius: 50% 20%;
-  margin-left: 1em;
-  margin-top: 1em;
+  border-radius: 50%;
+  padding: 2em;
+  margin: 1em;
 }
 
 #home-info .info-content {
@@ -241,11 +246,13 @@ p {
   min-height: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/*Laptop 769-*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .portrait {
     max-width: 30%;
+    height: auto;
     float: left;
-  }
+    }
   .info.content {
     float: right;
     width: 65%;
@@ -295,22 +302,47 @@ p {
 }
 
 /*Imported fonts*/
-.montserrat-font {
-  font-family: Montserrat;
-  font-size: 1.1em;
+.p-content {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  text-align: left;
 }
 
-.space-mono-font {
-  font-family: 'Space mono', monospace;
+.p-heading {
+  font-family: 'Roboto', monospace;
   font-size: 1.8em;
 }
-
 
 /*Gallery*/
 .responsive-img {
   height: auto;
   width: 100%;
   margin: 10px;
+}
+
+.imgtxtcontainer {
+  position: relative;
+}
+
+.hideimgtxt {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+}
+
+.showimgtxt {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*Splitting into 12 equal columns*/
@@ -364,4 +396,3 @@ p {
       min-width: 25%;
     }
   }
-}
